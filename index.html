@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="index.css">
+    <title></title>
+  </head>
+  <body>
+    <header>
+      <div class="">
+        <a href="imagesearch.html">Image Search</a>
+      </div>
+      <div class="">
+        <a href="advancedsearch.html">Advanced Search</a>
+      </div>
+    </header>
+    <main>
+      <figure>
+        <img src="https://www.google.co.in/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
+      </figure>
+      <form class="searchbox" action="https://google.com/search" id="googlesearch">
+        <div class="minifigure">
+          <div class="minicircle">
+
+          </div>
+          <div class="miniline">
+
+          </div>
+        </div>
+        <input type="text" name="q" value="" class="searchbox_div">
+        <input type="text" name="btnI" value="I'm Feeling Lucky" id="imhere" disabled>
+      </form>
+      <div class="below_searchbox">
+        <button type="submit" value="Submit" form="googlesearch" class="below_searchbox_div">Google Search</button>
+        <a href="#" class="below_searchbox_div" onclick="fun1()">I'm Feeling Lucky</a>
+      </div>
+    <!--</form>-->
+    </main>
+    <footer>
+      <div class="country">
+        India
+      </div>
+      <div class="privacyterms">
+        <div class="alignme">
+          About
+        </div>
+        <div>
+          Advertising
+        </div>
+        <div>
+          Business
+        </div>
+        <div>
+          How Search works
+        </div>
+        <div class="breakme">
+          Privacy
+        </div>
+        <div>
+          Terms
+        </div>
+        <div>
+          Settings
+        </div>
+      </div>
+    </footer>
+    <script type="text/javascript">
+      function fun1(){
+        document.getElementById("imhere").disabled = false;
+        document.getElementById("googlesearch").submit();
+      }
+    </script>
+  </body>
+</html>
